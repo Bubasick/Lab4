@@ -10,7 +10,7 @@ namespace Lab4
     {
         static void Main(string[] args)
         {
-            double f(double x) => x / (x - 1);
+            double f(double x) => Math.Pow(x,3) /  Math.Sqrt(Math.Pow(Math.Pow(x,2) + 9,3));
             int n = 1000;
 
             MPI.Environment.Run(ref args, comm =>
